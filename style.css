@@ -1,0 +1,448 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+html{
+    margin: 10px 50px;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: rgba(192, 185, 185, 0.467);
+min-width: 380px;
+}
+
+@media screen and (min-width:600px) {
+  
+    .first nav ul{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        background:linear-gradient(to left ,rgba(46, 178, 231, 0.608),rgba(14, 67, 89, 0.659));
+        list-style: none;
+        justify-items: center;
+        align-items: center;
+        box-shadow: 2px 2px 2px 2px hsla(199, 69%, 52%, 0.874);
+    
+    }
+    
+    .first nav  a :hover{
+        border-bottom: 4px solid rgb(240, 188, 183);
+    transform: scale(1.1);
+    transition-duration:1s ;
+    
+     }
+    
+    
+    
+    .icon{
+        overflow:visible;
+        width: 4vw;
+        background:linear-gradient(to right,hsla(197, 87%, 34%, 0.263),hsla(198, 26%, 18%, 0.279));
+        border-radius: 20%;
+    
+    }
+    .main{
+        display: grid;
+        grid-template-areas:
+        'main main sidebar'
+        'main main sidebar'
+        'main main git'
+        'imag imag git' ;
+        background:linear-gradient(to right,hsla(197, 87%, 34%, 0.286),hsla(198, 26%, 18%, 0.41));
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px 2px hsla(199, 69%, 52%, 0.874);
+    
+    }
+    .maincont{
+        grid-area: main;
+        display: grid;
+        grid-template-areas:
+        'zimg headlin '
+        'arti arti';
+        grid-template-columns: repeat(4,50%);
+    
+    }
+    .sidebar{
+        grid-area: sidebar;
+        background:linear-gradient(to right,hsla(197, 87%, 34%, 0.868),hsla(197, 27%, 18%, 0.659));
+    
+    }
+    .headlin{
+        grid-area: headlin;
+        justify-self:start;
+        align-self: center;
+        
+    }
+    .arti{
+        display: grid;
+        grid-area: arti;
+    }
+    
+    .znavoimg{
+        grid-area: zimg;
+        border-radius: 50%;
+        width: 16vw;
+        height:30vh;
+        margin:4vh 0 0 5vh;
+
+    }
+    .znavoimg:hover{
+    box-shadow: 1px 2px 2px 4px hsla(201, 67%, 36%, 0.551);
+    transition-duration:2s ;
+    transform: scale(1.1);
+    
+    }
+    .maincont article{
+        flex-grow: 1;
+    text-align: center;
+    justify-items: center;
+    direction: rtl;
+    font-size: 3vh;
+    }
+    .maincont h1{
+    font-size: 7vh;  
+    font-family: fantasy;
+    }
+    .maincont h2{
+        font-size: 4vh; 
+        font-family: fantasy;
+ 
+        }
+        span{
+            font-weight: bold;
+        }
+        .sidebar nav ul{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            list-style: none;
+            gap: 2vh;
+            margin-top: 5vh;
+            align-items: center;
+            
+        }
+        .sidebar nav ul a{
+            font-size: 2vw;
+            color: hsla(0, 0%, 100%, 0.778);
+            text-decoration: none;
+    
+        }
+        .sidebar nav ul a:hover{
+            color: hsla(0, 0%, 100%, 0.995);
+
+        }
+        .sidebar nav ul li{
+            width: 10vw;
+            font-size: 2vw;
+            background-color:hsla(191, 66%, 48%, 0.307) ;
+        overflow:visible;
+        border-radius: 7%;
+        }
+        .sidebar nav ul li:hover{
+            background-color: rgba(58, 176, 227, 0.612);
+        }
+     
+       
+        .git{
+            grid-area: git;
+            background:linear-gradient(to left ,rgba(46, 178, 231, 0.608),rgba(14, 67, 89, 0.659));
+        }
+        .gitsec{
+            display: flex;
+            flex-direction: column;
+    align-items: center;
+    
+        }
+        .gitimg{
+            width: 20vw;
+            height:25vh;
+    
+        }
+        .myp{
+            
+            width: 100%;
+            font-size: 3vh;
+            color: white;
+            background:linear-gradient(to left ,rgba(46, 178, 231, 0.608),rgba(14, 67, 89, 0.659));
+            text-align: center;
+        }
+        .mypsec{
+            
+            width: 100%;
+            font-size: 4vh;
+            color: rgb(24, 8, 8);
+            text-align: center;
+            text-decoration: none;
+        }
+        .headimgs{
+            grid-area: imag;
+            height: 40vh;
+        display: grid;
+    }
+        .imgscont{
+            width:100%;
+            height: inherit;
+    overflow: hidden;
+    justify-self: center;
+    background-image: url('/imgs/im1.jpg');
+    background-size: cover;
+    background-position: center;
+    animation-name: imges;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+        }
+    @keyframes imges {
+        20%{background-image: url('/imgs/im2.jpg');
+        background-size: cover;
+    background-position: center;}
+    40%{background-image: url('/imgs/im3.jpg');
+        background-size: cover;
+    background-position: center;}
+    60%{background-image: url('/imgs/im5.jpg');
+        background-size: cover;
+    background-position: center;}
+    80%{background-image: url('/imgs/im6.jpg');
+        background-size: cover;
+    background-position: center;}
+    
+    }
+    .fot{
+        background:linear-gradient(to left ,rgba(46, 178, 231, 0.608),rgba(14, 67, 89, 0.659));
+    height: 15vh;
+    border: 1px solid hsl(218, 66%, 60%);
+    box-shadow: 1px 2px 2px 4px hsla(209, 66%, 60%, 0.677);
+    margin-top: 4vh;
+    text-align: center;
+    
+    }
+    .fotcon{
+        background:linear-gradient(to left ,rgba(46, 178, 231, 0.608),rgba(14, 67, 89, 0.659));
+    font-size:2.5vh;
+    border: 1px solid hsl(218, 66%, 60%);
+    box-shadow: 2px 2px 2px 2px black;
+    text-decoration: none;
+    color: aliceblue;
+    }
+    
+}
+
+    
+@media screen and (max-width :600px) {
+.first nav ul{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    background:linear-gradient(to left ,rgba(46, 178, 231, 0.608),rgba(14, 67, 89, 0.659));
+    list-style: none;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px 2px rgb(24, 116, 137);
+
+}
+.first{
+    border-bottom:4px solid hsla(192, 93%, 71%, 0.636) ;
+}
+.first nav  a :hover{
+    border-bottom: 4px solid rgb(240, 188, 183);
+transform: scale(1.1);
+transition-duration:1s ;
+
+ }
+
+
+
+.icon{
+    overflow:visible;
+    width: 4vw;
+
+}
+.main{
+    display: grid;
+    grid-template-areas:
+    'sidebar sidebar sidebar'
+    'main main main'
+    'main main main'
+    'git git git'
+    'imag imag imag'
+
+
+;
+background:linear-gradient(to left ,rgba(46, 178, 231, 0.608),rgba(14, 67, 89, 0.659));
+
+margin-top: 20px;
+box-shadow: 1px 2px 1px 4px hsla(200, 65%, 41%, 0.695);
+
+}
+
+.maincont{
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+    'zimg headlin '
+    'arti arti';
+    grid-template-columns: repeat(4,50%);
+
+}
+.headlin{
+    grid-area: headlin;
+    justify-self:start;
+    align-self: center;
+    
+}
+.sidebar{
+    grid-area: sidebar;
+ width: 74.5vw;
+ background:linear-gradient(to left ,rgba(46, 178, 231, 0.608),rgba(14, 67, 89, 0.659));
+min-width: 380px;
+}
+.arti{
+    display: grid;
+    grid-area: arti;
+}
+
+.znavoimg{
+    grid-area: zimg;
+    border-radius: 50%;
+    width: 16vw;
+    height:20vh;
+    margin:4vh 0 0 5vh;
+
+}
+.znavoimg:hover{
+box-shadow: 1px 1px 1px 1px hsla(207, 56%, 36%, 0.627);
+transition-duration:2s ;
+transform: scale(1.1);
+
+}
+.maincont article{
+    flex-grow: 1;
+text-align: center;
+direction: rtl;
+font-size:clamp(1vh,2vh,5vh);  
+justify-items: center;
+}
+.maincont h1{
+font-size:clamp(2vh,4vh,7vh);  
+}
+.maincont h2{
+    font-size:clamp(1vh,2vh,5vh);  
+}
+    span{
+        font-weight: bold;
+    }
+ 
+    .sidebar nav ul{
+        display: grid;
+        grid-template-columns:repeat(8, 1fr) ;
+        text-align: center;
+        justify-content: center;
+        list-style: none;
+        gap: 0.2vh;
+        margin-top: 0;
+    }
+    .sidebar nav ul a{
+        font-size: 0.7vh;
+        color: white;
+        text-decoration: none;
+
+    }
+    .sidebar nav ul a:hover{
+    color: rgb(24, 116, 137);
+    }
+    .sidebar nav ul li{
+        font-size: 1vh;
+        color: white;
+        background-color:hsl(198, 69%, 42%) ;
+    }
+    .sidebar nav ul li:hover{
+        background-color: rgba(255, 255, 255, 0.415);
+    }
+ 
+   
+    .git{
+        grid-area: git;
+        background:linear-gradient(to left ,rgba(46, 178, 231, 0.608),rgba(14, 67, 89, 0.659));
+        margin-top: 2vh;
+    }
+    .gitsec{
+        display: flex;
+        flex-direction: column;
+align-items: center;
+
+    }
+    .gitimg{
+        width: 40vw;
+        height:auto;
+
+    }
+    .myp{
+        
+        width: 100%;
+        font-size: 2vh;
+        color: white;
+        background-color:rgb(70, 158, 177) ;
+        text-align: center;
+    }
+    .mypsec{
+        
+        width: 100%;
+        font-size: 2vh;
+        color: rgb(24, 8, 8);
+        background-color:rgb(70, 158, 177) ;
+        text-align: center;
+        text-decoration: none;
+    }
+    .headimgs{
+        grid-area: imag;
+        height: 40vh;
+    display: grid;
+}
+    .imgscont{
+        width:100%;
+overflow: hidden;
+justify-self: center;
+background-image: url('/imgs/im1.jpg');
+background-size: cover;
+background-position: center;
+animation-name: imges;
+animation-duration: 9s;
+animation-iteration-count: infinite;
+animation-direction: alternate-reverse;
+margin-top: 2vh;
+    }
+@keyframes imges {
+    20%{background-image: url('/imgs/im2.jpg');
+    background-size: cover;
+background-position: center;}
+40%{background-image: url('/imgs/im3.jpg');
+    background-size: cover;
+background-position: center;}
+60%{background-image: url('/imgs/im5.jpg');
+    background-size: cover;
+background-position: center;}
+80%{background-image: url('/imgs/im6.jpg');
+    background-size: cover;
+background-position: center;}
+
+}
+.fot{
+    background:linear-gradient(to left ,rgba(46, 178, 231, 0.608),rgba(14, 67, 89, 0.659));
+    height: 15vh;
+box-shadow: 2px 2px 2px 2px hsla(199, 69%, 52%, 0.874);
+margin-top: 3vh;
+text-align: center;
+
+}
+.fotcon{
+    background:linear-gradient(to left ,rgba(46, 178, 231, 0.608),rgba(14, 67, 89, 0.659));
+    font-size:1.5vh;
+border: 1px solid hsla(204, 69%, 33%, 0.558);
+box-shadow: 2px 2px 2px 2px black;
+text-decoration: none;
+color: aliceblue;
+}
+}
+
+ 
