@@ -186,7 +186,7 @@ min-width: 380px;
             height: inherit;
     overflow: hidden;
     justify-self: center;
-    background-image: url('/imgs/im1.jpg');
+    background-image: url('im1.jpg');
     background-size: cover;
     background-position: center;
     animation-name: imges;
@@ -195,16 +195,16 @@ min-width: 380px;
     animation-direction: alternate-reverse;
         }
     @keyframes imges {
-        20%{background-image: url('/imgs/im2.jpg');
+        20%{background-image: url('im2.jpg');
         background-size: cover;
     background-position: center;}
-    40%{background-image: url('/imgs/im3.jpg');
+    40%{background-image: url('im3.jpg');
         background-size: cover;
     background-position: center;}
-    60%{background-image: url('/imgs/im5.jpg');
+    60%{background-image: url('im5.jpg');
         background-size: cover;
     background-position: center;}
-    80%{background-image: url('/imgs/im6.jpg');
+    80%{background-image: url('im6.jpg');
         background-size: cover;
     background-position: center;}
     
@@ -413,16 +413,16 @@ animation-direction: alternate-reverse;
 margin-top: 2vh;
     }
 @keyframes imges {
-    20%{background-image: url('/imgs/im2.jpg');
+    20%{background-image: url('im2.jpg');
     background-size: cover;
 background-position: center;}
-40%{background-image: url('/imgs/im3.jpg');
+40%{background-image: url('im3.jpg');
     background-size: cover;
 background-position: center;}
-60%{background-image: url('/imgs/im5.jpg');
+60%{background-image: url('im5.jpg');
     background-size: cover;
 background-position: center;}
-80%{background-image: url('/imgs/im6.jpg');
+80%{background-image: url('im6.jpg');
     background-size: cover;
 background-position: center;}
 
